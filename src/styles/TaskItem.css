@@ -1,0 +1,51 @@
+.task{
+    width: 100%;
+    max-height: 3rem;
+    min-height: 2rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.task button:not(button.delete){
+    position: absolute;
+    right: 0;
+    height: 1rem;
+    outline: none;
+    aspect-ratio: 1;
+}
+
+.task h4{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.task h4.completed{
+    text-decoration: line-through;
+    text-decoration-thickness: 0.2rem;
+    opacity: 0.5;
+}
+
+.task button.delete{
+    height: 100%;
+    background: hsl(0 0 100 / 0.2);
+    backdrop-filter: blur(1rem);
+    border: solid 1px black;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+}
+
+.task button.true{
+    background-color: hsl(0 0 100 / 0.6);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
