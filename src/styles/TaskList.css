@@ -3,6 +3,7 @@
 .container{
     max-width: 40rem;
     max-height: 55rem;
+    min-height: 30rem;
     background: hsl(0 0 0 / 0.4);
     position: relative;
     display: flex;
@@ -64,4 +65,16 @@
 body{
     margin: 0;
     padding: 0;
+}
+
+@media (max-width: 600px) {
+    .add{
+        position: fixed;
+        top: 0%;
+        width: 100%;
+    }
+
+    .display{
+        margin-top: 1rem;
+    }
 }
